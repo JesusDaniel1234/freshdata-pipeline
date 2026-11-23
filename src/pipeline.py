@@ -39,3 +39,6 @@ if __name__ == "__main__":
     ventas = cargar_ventas("ventas_2024_01.csv")
     total = calcular_total_tienda(ventas, "T001")
     print(f"Total tienda T001: ${total:.2f}")
+    print("Resumen")
+    resumen = resumen_por_producto(ventas=ventas)
+    print(resumen)
